@@ -35,7 +35,7 @@ st.set_page_config(
     page_title=APP_TITLE,
     page_icon="🧭",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",  # 모바일에서는 접힌 채로 시작
 )
 
 # ---------------------------------------------------------------------------
