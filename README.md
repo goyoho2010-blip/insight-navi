@@ -42,6 +42,19 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+### 바로가기 링크(딥링크)
+
+블로그·문자에 붙일 때 화면을 바로 열 수 있습니다.
+
+| 링크 | 여는 화면 |
+|---|---|
+| `?p=home` | 통합 대문 |
+| `?p=career` | 진로NAVI 체험 |
+| `?p=learning` | 학습NAVI 체험 |
+| `?p=susi` | 수시NAVI 체험 |
+| `?p=interview` | 면접NAVI PRO 체험 |
+| `?p=ranking` | 내 위치 NAVI 안내 |
+
 ## 검증
 
 ```bash
@@ -52,7 +65,8 @@ python -m pytest tests -q     # 25 passed
 - 수치 정합성: 학습 KPI 평균·전주 대비·D-7 위험교재 판정, 수시 역량 점수 = 항목별 배점 합계
 - 가명/PII: 전화번호·주민번호·이메일·학교명 패턴 0건
 - 외부 의존: `openai`·`supabase`·`requests` 등 import 0건, API 키 흔적 0건
-- 화면: 6개 페이지 예외 0건, `st.error` 0건
+- 화면: 6개 페이지 예외 0건, `st.error` 0건, 헤드리스 브라우저 콘솔 오류 0건(6개 화면 모두)
+- 실행 화면: `downloads/insight-hub-home.png`(대문), `downloads/insight-hub-demo.png`(학습NAVI 체험)
 
 ## Streamlit Cloud 배포 값
 
